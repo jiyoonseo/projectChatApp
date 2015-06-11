@@ -1,0 +1,62 @@
+/******************************************************
+public Location:
+ec2-52-10-124-84.us-west-2.compute.amazonaws.com
+OR
+52.10.124.84
+
+PORT: 3030(DB), 9000(no DB)
+
+//connecting to my server...=============================================
+ssh -i node.pem ubuntu@ec2-52-10-124-84.us-west-2.compute.amazonaws.com 
+=========================================================================
+
+/***********************************************************/
+//file transfer cases... btw SERVER <-> LOCAL Directory
+//----------------------------------------------------------/
+//from home directory(local) -> Server...
+Jiyoon@Jiyoon ~
+$ scp -i node.pem ~/node.pem ubuntu@ec2-52-10-124-84.us-west-2.compute.amazonaws.com:~/node.pem 
+
+scp -i node.pem ~/chatDB/brand_new/package.json ubuntu@ec2-52-10-124-84.us-west-2.compute.amazonaws.com:~/socketDB/package.json 
+
+scp -i node.pem ~/chatDB/img/favicon.png ubuntu@ec2-52-10-124-84.us-west-2.compute.amazonaws.com:~/socketDB/img/favicon.png
+
+scp -i node.pem ~/chatDB/brand_new/img/blur-background2.jpg ubuntu@ec2-52-10-124-84.us-west-2.compute.amazonaws.com:~/socketDB/img/blur-background2.jpg
+
+scp -i node.pem ~/chatDB/brand_new/css/style.css ubuntu@ec2-52-10-124-84.us-west-2.compute.amazonaws.com:~/socketDB/css/style.css
+
+//from server to home directory file transfer
+Jiyoon@Jiyoon ~
+$ scp -i node.pem ubuntu@ec2-52-10-124-84.us-west-2.compute.amazonaws.com:~/fromlocal.txt ~/fromserver.txt
+
+//sample file fransfer from server -> local
+scp -i node.pem ec2-user@ec2-198-51-100-1.compute-1.amazonaws.com:~/SampleFile.txt ~/SampleFile2.txt
+
+//transfer to new location in my home directory(local)
+$ scp -i node.pem ubuntu@ec2-52-10-124-84.us-west-2.compute.amazonaws.com:~/testc.js ~/../tf/testc1.js
+/***********************************************************/
+
+//Make the server running background automatically...
+ nohup node test1.js &
+
+//to stop the background running.... 
+ ps -ef  //to see background working
+ kill [PID number] (ex. kill 4161)
+
+
+
+
+------------------------------------------------------------
+REFERENCES--------------------------------------------------
+ CHAT 	:	(PORT-9000)	9992
+ CHAT_DB:	(PORT-3030)	10012
+
+
+
+
+ -------------------------------------------------------------------------------------------------------
+
+Go MongoDB
+
+
+

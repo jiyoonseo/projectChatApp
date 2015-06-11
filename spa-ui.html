@@ -1,0 +1,129 @@
+<html>
+<head>
+  <title>port 7000: Chat with socket.io and node.js</title>
+  
+<!-- //internal ONLY /////***** to develop locally *******
+MongoDB:  C:\Program Files\MongoDB\Server\3.0\bin\mongod.exe
+NodeJS:   C:\Users\Jiyoon\Documents\aJiyoonStudy\chat_spa\chatDB\app.js
+C:\Users\Jiyoon\Documents\aJiyoonStudy\chat_spa\chatDB 
+************************************************************LOCAL LOCATION
+-->
+
+
+  <!-- BOOTSTRAPT STYLE -->
+   <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <!-- Latest compiled JavaScript -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<!-- FAVICON :D -->
+	<link rel='shortcut icon' href='img/favicon.png' type='image/png' />
+
+
+  <!-- custom style -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+</head>
+<body >
+  <div id="nickWrap">
+    <div class="row">
+      <div class="col-lg-8 col-centered">
+        <p id="loginp">Enter your username:</p>
+
+        <p id="nickError"></p>
+        <form id="setNick">
+          
+          <div class="form-group">
+            <input type="text" id="nickname" class="form-control" placeholder="User Name">
+          </div>          
+          <input type="submit" class="btn btn-default navbar-btn" value="Enter Chat Room" ></button>
+          
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <!-- After Sign in...  -->
+
+  <div id="contentWrap" >
+
+    <div id="chatWrap">
+      <div id="chat" > </div>
+        <form id="send-message">
+
+          
+          <div class="form-group">
+            <input type="text" id="message" class="form-control" placeholder="Enter Message">
+            <input type="submit" id="sendMSG" class="btn btn-default navbar-btn" value="Send" >
+
+          </div>          
+          
+          
+          <!--
+          <input type="text" size="35" id="message"></input>
+          <input type="submit" value="Send"></input>
+          -->
+
+        </form>
+        
+        
+        
+      </div>
+
+
+
+    <!-- List of users... -->
+    <div id="chatRoom" class="col-lg-4">
+      <h3 >Users in this Room</h3>
+      <div id="users" ></div>
+    </div>
+    <br>
+    <button id="xButton" class="btn btn-default" >Hide</button>
+    <button id="openButton" class="btn btn-default" >Show</button>
+
+    <!-- Guide for whisper option -->
+    <br><br> 
+
+    <div class="col-lg-4" id="privateOption">
+
+      <br><br>
+
+      <form id="deleteMsgs">
+        <button id="deleteDB" class="btn btn-default label-danger" data-toggle="tooltip" title="Delete your messages PERMANENTLY">DELETE MY MESSAGES FROM DB</button>
+      </form>
+
+      <form id="clearChat">
+        <button id="clearC" class="btn btn-default label-info" data-toggle="tooltip" title="Keep all the messages in Database">Clear Messages</button>
+      </form>
+
+      <form id="reloadMsgs">
+        <button id="reMsg" class="btn btn-default label-warning" >Reload Messages</button>
+      </form>      
+
+      <div class="alert alert-danger" role="alert">
+        <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+        <i>Private Message Format:</i> <b id="strong">/p [userID] [message]</b> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Example:</i> <b id="strong">/p John Hello!</b> <br>
+        <span class="glyphicon glyphicon-alert" aria-hidden="false"></span>
+        <i>Private messages will not be saved!</i><br>        
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+
+  
+  
+  <script src="/socket.io/socket.io.js"></script>
+
+  <!--CUSTOM JS -->
+  <script src="/js/chat.js"></script>
+  <script src="/js/socket.js"></script>
+  
+</body>
+</html>
