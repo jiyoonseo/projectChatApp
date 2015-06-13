@@ -5,13 +5,14 @@
 
 1. User Manual
 	a. Getting into the chatting web page and attempting enter unique user ID
-	b. If you failed to enter user name, since another user use the same id, enter different one until you don't get a failure message.
+	b. If you are failed to enter the chatting room, due to duplicated user id, enter different one until you don't get a failure message.
 	c. Once you get into the chatting room, you can send PUBLIC messages by default.
 	d. Enter '/p [recipient’s user name] [message]' to send private message to specific user in the room
 	e. Click 'clear messages' to hide messages from chatting box
 	f. Click 'Reload messages' to all messages from chatting database
 	g. In order to delete your messages from database permanently, please click 'Delete' button
-	h. In case of bug, please contact Author at s-jiyoon.seo@lwtech.edu
+	h. By default, users will save all public messages in database.
+	i. In case of bug, please contact Author at s-jiyoon.seo@lwtech.edu
 
 
 2. Short Description of the Project
