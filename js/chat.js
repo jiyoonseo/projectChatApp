@@ -1,3 +1,5 @@
+
+//Scroll down to the bottom when the chatting messages are too long
 function updateScroll(){
     var element = document.getElementById("chat");
     element.scrollTop = element.scrollHeight;
@@ -5,7 +7,7 @@ function updateScroll(){
 setInterval("updateScroll",1000);
 
 
-
+//JQuery functions -- UI options to show/hide data
 $(document).ready(function(){
 	$("#xButton").click(function(){
 	        $("#chatWrap").slideUp();

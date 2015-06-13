@@ -1,5 +1,6 @@
 jQuery(function($){
 
+  //bootstrapt tooltip option
   $('[data-toggle="tooltip"]').tooltip();   
 
   var socket = io.connect();
@@ -74,11 +75,13 @@ jQuery(function($){
 
   });
 
+  //prevent refresh page after submit the form & empty chatting messages
   $clearMsgs.submit(function(e){
     e.preventDefault();
     $chat.empty();
   })
 
+  //prevent refresh page after submit the form & send server a signal 're-load'
   $reloadMsgs.submit(function(e){
     e.preventDefault();
     socket.emit('re-reload', function(data){
@@ -87,6 +90,7 @@ jQuery(function($){
 
   });
 
+  //receive signal 'loading again' from server so that chatting messages are loaded
   socket.on('loading again', function(docs){
     $chat.empty();
     for(var i = 0 ; i<docs.length; i++){
@@ -94,9 +98,8 @@ jQuery(function($){
     }
   });
 
-  // DELETE DB ********************************
 
-
+  // DELETE DB START ********************************
   $deleteMsgs.submit(function(e){
     e.preventDefault(); //no need to refresh the page
     //$chat.empty();
@@ -115,10 +118,7 @@ jQuery(function($){
     for(var i = 0 ; i<docs.length; i++){
       displayMsgs(docs[i]);  
     }
-    
-
-  }); 
-
+  });
   // END OF DELETE DB********************************
 
 

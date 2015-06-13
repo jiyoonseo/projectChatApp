@@ -1,3 +1,10 @@
+/*
+* Author: Jiyoon Seo - June 2015
+* Server-side programming to run the application.
+* Local setting: run on NodeJS command 
+* 
+*/
+
 //server-side
 // location: C:\Users\j\Documents\A_mySTUDY\spa\chat_sochet
 // 
