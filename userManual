@@ -1,24 +1,25 @@
-/**********************************************************************************************
-****User Manual********************************************************************************
+
+/****User Manual*******************************************************************************
 ****Project: Chatting Single Page Application (Chat SPA) --by Jiyoon Seo(Author)***************
+***********************************************************************************************
 ***********************************************************************************************/
 
 1. User Manual
 	a. Getting into the chatting web page and attempting enter unique user ID
-	b. If you are failed to enter the chatting room, due to duplicated user id, enter different one until you don't get a failure message.
-	c. Once you get into the chatting room, you can send PUBLIC messages by default.
+	b. If a user is failed to enter the chatting room, due to duplicated user id, enter different one until he/she don't get a failure message.
+	c. Once a user get into the chatting room, she/he can send PUBLIC messages by default.
 	d. Enter '/p [recipient’s user name] [message]' to send private message to specific user in the room
 	e. Click 'clear messages' to hide messages from chatting box
 	f. Click 'Reload messages' to all messages from chatting database
-	g. In order to delete your messages from database permanently, please click 'Delete' button
+	g. In order to delete messages from database permanently, please click 'Delete' button
 	h. By default, users will save all public messages in database.
-	i. In case of bug, please contact Author at s-jiyoon.seo@lwtech.edu
+	i. In case of a bug, please contact the Author at s-jiyoon.seo@lwtech.edu
 
 
 2. Short Description of the Project
-	This is a SPA chatting application. This application can be used by any internet user. Users can do 'real time' communication using this app by sending and receiving private and public messages through chatting box. Users can save all the Private messages in database by default, and they can delete their own messages permanently. They can temporally hide/show messages in the chatting box.
+	This is a single page chatting application. This application can be used by any internet user currently. Users can do 'real-time' communication with this app by sending and receiving private and public messages through chatting box. Users can save all the Public messages in database by default, and they can delete their own messages permanently. Users can temporally hide/show messages in the chatting room.
 
-	A demo version is available at /http://ec2-52-10-124-84.us-west-2.compute.amazonaws.com:7000/ 
+	A demo version is available at http://ec2-52-10-124-84.us-west-2.compute.amazonaws.com:7000/ 
 
 3. User Interaction Scenario
 	a. Assumption:
