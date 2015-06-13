@@ -1,12 +1,12 @@
 # projectChatApp
-This is a single page web application for chatting. You can send public/private messages and save messages in database. Also this app allows you to delete your saved messages. Enoy! @http://http://ec2-52-10-124-84.us-west-2.compute.amazonaws.com:7000/
+This is a single page web application for chatting. You can send public/private messages and save messages in database. Also this app allows you to delete your saved messages. Enoy! @http://ec2-52-10-124-84.us-west-2.compute.amazonaws.com:7000/
 
 
 
-/****User Manual*******************************************************************************
-****Project: Chatting Single Page Application (Chat SPA) --by Jiyoon Seo(Author)***************
-***********************************************************************************************
-***********************************************************************************************/
+/****User Manual**********************************************************
+****Project: Chatting Single Page Application (Chat SPA) *****************
+******************************************--by Jiyoon Seo(Author)*********
+**************************************************************************/
 
 1. User Manual
 	a. Getting into the chatting web page and attempting enter unique user ID
@@ -23,7 +23,10 @@ This is a single page web application for chatting. You can send public/private 
 2. Short Description of the Project
 	This is a single page chatting application. This application can be used by any internet user currently. Users can do 'real-time' communication with this app by sending and receiving private and public messages through chatting box. Users can save all the Public messages in database by default, and they can delete their own messages permanently. Users can temporally hide/show messages in the chatting room.
 
-	A demo version is available at http://ec2-52-10-124-84.us-west-2.compute.amazonaws.com:7000/ 
+	A demo version is available at---------------------------------------------- http://ec2-52-10-124-84.us-west-2.compute.amazonaws.com:7000/ 
+	OR
+	http://52.10.124.84:7000/ --------------------------------------------------
+
 
 3. User Interaction Scenario
 	a. Assumption:
